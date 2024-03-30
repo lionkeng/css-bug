@@ -1,10 +1,13 @@
-import Link from "next/link";
+import Link from 'next/link'
+import GoHome from './GoHome';
 
 export default function Page() {
   return (
     <div className="sub">
       <p>Sub</p>
-      <Link href="/">Home</Link>
+      <Link href="/" passHref legacyBehavior>
+        <GoHome />
+      </Link>
     </div>
   );
 }
